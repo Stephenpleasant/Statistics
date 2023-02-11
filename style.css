@@ -46,46 +46,60 @@ width: 700px;
    }
 
    .span1{
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
    }
-   .span0 h1{
-    font-size: 20px;
-   }
-   .span0 p{
-    font-size: 10px;
-   }
-   .span9 h1{
-    margin-left: 20px;
-    font-size: 20px;
-   }
-
-   .span9 p{
-    font-size: 10px;
-    margin-left: 20px;
-  
-   }
-
-   .span8 h1{
-    margin-left: 20px;
-    font-size: 20px;
-   }
-
-   .span8 p{
-    font-size: 10px;
-    margin-left: 20px;
+   
+   .span0{
+    font-size: 15px;
+    margin: 4px;
    }
 
 .section2 {
-  margin-top: 50px;
-    display: flex;
-    float: right;
-    width: 350px;
-    height: 250px;
-    background:  url(image-header-desktop.jpg);
+ display: flex;
+ float: right;
+ box-sizing: border-box;
+ margin-top: 50px;
+ height: 263px;
+ margin-right: 33px;
+    
 }
-
-.section2 .overlay{
+.overlay{
   position: absolute;
-  background: hsl(277, 64%, 61%);;
+  width: 54%;
+  height: 263px;
+  margin-top: 50px;
+  background-color: hsl(277, 64%, 61%, 50%);
 }
+@media only screen and(max-width: 600px) {
+  .container{
+    position: relative;
+    display: flex;
+    height: 100%;
+    font-size: 15%;
+    clear: both;
+    overflow: visible;
+  }
+  .section2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+
+  }
+
+  .overlay{
+    position: absolute;
+    transform: translateX(0%);
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .section1{
+    position: absolute;
+    transform: translateY(90%);
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  }
+  
