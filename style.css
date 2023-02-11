@@ -66,7 +66,7 @@ width: 700px;
 }
 .overlay{
   position: absolute;
-  width: 54%;
+  width: 50%;
   height: 263px;
   margin-top: 50px;
   background-color: hsl(277, 64%, 61%, 50%);
